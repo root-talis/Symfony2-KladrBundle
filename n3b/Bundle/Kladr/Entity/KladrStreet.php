@@ -29,7 +29,7 @@ Class KladrStreet
      */
     private $parent;
 	/**
-     * @ORM\Column(length="11")
+     * @ORM\Column(length=11)
      */
     private $parentCode;
     /**

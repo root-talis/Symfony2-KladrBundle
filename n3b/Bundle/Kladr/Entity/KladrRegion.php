@@ -16,7 +16,7 @@ Class KladrRegion
      */
     private $id;
     /**
-     * @ORM\Column(type="string", length="20")
+     * @ORM\Column(type="string", length=20)
      */
     private $socr;
     /**
@@ -29,11 +29,11 @@ Class KladrRegion
      */
     private $parent;
     /**
-     * @ORM\Column(nullable="true")
+     * @ORM\Column(nullable=true)
      */
     private $fullParentTitle;
 	/**
-     * @ORM\Column(length="11", nullable="true")
+     * @ORM\Column(length=11, nullable=true)
      */
     private $parentCode;
     /**
@@ -41,7 +41,7 @@ Class KladrRegion
      */
     private $level;
     /**
-     * @ORM\Column(nullable="true")
+     * @ORM\Column(nullable=true)
      */
     private $emsTo;
     /**

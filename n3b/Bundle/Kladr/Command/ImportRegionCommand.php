@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Bundle\DoctrineBundle\Command\DoctrineCommand;
+use Doctrine\Bundle\DoctrineBundle\Command\DoctrineCommand;
 use n3b\Bundle\Kladr\Entity\KladrRegion;
 
 class ImportRegionCommand extends DoctrineCommand
@@ -44,7 +44,7 @@ EOT
 
             if(substr($code, -2) != '00')
                 continue;
-            
+
             $code = substr($code, 0, -2);
             $region->setId($code);
 
@@ -89,7 +89,7 @@ EOT
     {
         $sql = "TRUNCATE TABLE KladrRegion";
         $stmt = $this->em->getConnection()->prepare($sql);
-        
+
         return $stmt->execute();
     }
 

@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Bundle\DoctrineBundle\Command\DoctrineCommand;
+use Doctrine\Bundle\DoctrineBundle\Command\DoctrineCommand;
 use n3b\Bundle\Kladr\Entity\KladrRegion;
 use Doctrine\ORM\Query\ResultSetMapping;
 
